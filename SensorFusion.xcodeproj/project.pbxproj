@@ -8,18 +8,43 @@
 
 /* Begin PBXBuildFile section */
 		670349251CC84E7800E299CF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 670349241CC84E7800E299CF /* AppDelegate.swift */; };
-		670349271CC84E7800E299CF /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 670349261CC84E7800E299CF /* ViewController.swift */; };
+		670349271CC84E7800E299CF /* DeviceMotionPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 670349261CC84E7800E299CF /* DeviceMotionPage.swift */; };
 		6703492C1CC84E7800E299CF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6703492B1CC84E7800E299CF /* Assets.xcassets */; };
 		6703492F1CC84E7800E299CF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6703492D1CC84E7800E299CF /* LaunchScreen.storyboard */; };
+		670349471CC96E7F00E299CF /* LYCollectionViewBehavior.m in Sources */ = {isa = PBXBuildFile; fileRef = 6703493B1CC96E7F00E299CF /* LYCollectionViewBehavior.m */; };
+		670349481CC96E7F00E299CF /* LYCollectionViewCustomBehavior.m in Sources */ = {isa = PBXBuildFile; fileRef = 6703493D1CC96E7F00E299CF /* LYCollectionViewCustomBehavior.m */; };
+		670349491CC96E7F00E299CF /* LYCollectionViewLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 6703493F1CC96E7F00E299CF /* LYCollectionViewLayout.m */; };
+		6703494A1CC96E7F00E299CF /* LYPageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 670349431CC96E7F00E299CF /* LYPageViewController.m */; };
+		6703494B1CC96E7F00E299CF /* UIKit+LYAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 670349461CC96E7F00E299CF /* UIKit+LYAdditions.m */; };
+		670349621CC9875C00E299CF /* LYListHeaderSection.m in Sources */ = {isa = PBXBuildFile; fileRef = 6703495F1CC9875C00E299CF /* LYListHeaderSection.m */; };
+		670349631CC9875C00E299CF /* LYListSection.m in Sources */ = {isa = PBXBuildFile; fileRef = 670349611CC9875C00E299CF /* LYListSection.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		670349211CC84E7800E299CF /* SensorFusion.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SensorFusion.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		670349241CC84E7800E299CF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		670349261CC84E7800E299CF /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		670349261CC84E7800E299CF /* DeviceMotionPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeviceMotionPage.swift; sourceTree = "<group>"; };
 		6703492B1CC84E7800E299CF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		6703492E1CC84E7800E299CF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		670349301CC84E7800E299CF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6703493A1CC96E7F00E299CF /* LYCollectionViewBehavior.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LYCollectionViewBehavior.h; sourceTree = "<group>"; };
+		6703493B1CC96E7F00E299CF /* LYCollectionViewBehavior.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LYCollectionViewBehavior.m; sourceTree = "<group>"; };
+		6703493C1CC96E7F00E299CF /* LYCollectionViewCustomBehavior.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LYCollectionViewCustomBehavior.h; sourceTree = "<group>"; };
+		6703493D1CC96E7F00E299CF /* LYCollectionViewCustomBehavior.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LYCollectionViewCustomBehavior.m; sourceTree = "<group>"; };
+		6703493E1CC96E7F00E299CF /* LYCollectionViewLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LYCollectionViewLayout.h; sourceTree = "<group>"; };
+		6703493F1CC96E7F00E299CF /* LYCollectionViewLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LYCollectionViewLayout.m; sourceTree = "<group>"; };
+		670349401CC96E7F00E299CF /* LYPage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LYPage.h; sourceTree = "<group>"; };
+		670349411CC96E7F00E299CF /* LYPageLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LYPageLayout.h; sourceTree = "<group>"; };
+		670349421CC96E7F00E299CF /* LYPageViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LYPageViewController.h; sourceTree = "<group>"; };
+		670349431CC96E7F00E299CF /* LYPageViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LYPageViewController.m; sourceTree = "<group>"; };
+		670349441CC96E7F00E299CF /* LYSection.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LYSection.h; sourceTree = "<group>"; };
+		670349451CC96E7F00E299CF /* UIKit+LYAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIKit+LYAdditions.h"; sourceTree = "<group>"; };
+		670349461CC96E7F00E299CF /* UIKit+LYAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIKit+LYAdditions.m"; sourceTree = "<group>"; };
+		6703494E1CC96FFB00E299CF /* SensorFusion-Bridging-Header.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "SensorFusion-Bridging-Header.h"; sourceTree = "<group>"; };
+		6703495E1CC9875C00E299CF /* LYListHeaderSection.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LYListHeaderSection.h; sourceTree = "<group>"; };
+		6703495F1CC9875C00E299CF /* LYListHeaderSection.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LYListHeaderSection.m; sourceTree = "<group>"; };
+		670349601CC9875C00E299CF /* LYListSection.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LYListSection.h; sourceTree = "<group>"; };
+		670349611CC9875C00E299CF /* LYListSection.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LYListSection.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -53,12 +78,47 @@
 			isa = PBXGroup;
 			children = (
 				670349241CC84E7800E299CF /* AppDelegate.swift */,
-				670349261CC84E7800E299CF /* ViewController.swift */,
+				670349261CC84E7800E299CF /* DeviceMotionPage.swift */,
 				6703492B1CC84E7800E299CF /* Assets.xcassets */,
 				6703492D1CC84E7800E299CF /* LaunchScreen.storyboard */,
 				670349301CC84E7800E299CF /* Info.plist */,
+				6703494E1CC96FFB00E299CF /* SensorFusion-Bridging-Header.h */,
+				670349381CC96E7000E299CF /* Libraries */,
 			);
 			path = SensorFusion;
+			sourceTree = "<group>";
+		};
+		670349381CC96E7000E299CF /* Libraries */ = {
+			isa = PBXGroup;
+			children = (
+				670349391CC96E7F00E299CF /* LYPageLayout */,
+			);
+			name = Libraries;
+			sourceTree = "<group>";
+		};
+		670349391CC96E7F00E299CF /* LYPageLayout */ = {
+			isa = PBXGroup;
+			children = (
+				6703493A1CC96E7F00E299CF /* LYCollectionViewBehavior.h */,
+				6703493B1CC96E7F00E299CF /* LYCollectionViewBehavior.m */,
+				6703493C1CC96E7F00E299CF /* LYCollectionViewCustomBehavior.h */,
+				6703493D1CC96E7F00E299CF /* LYCollectionViewCustomBehavior.m */,
+				6703493E1CC96E7F00E299CF /* LYCollectionViewLayout.h */,
+				6703493F1CC96E7F00E299CF /* LYCollectionViewLayout.m */,
+				670349401CC96E7F00E299CF /* LYPage.h */,
+				670349411CC96E7F00E299CF /* LYPageLayout.h */,
+				670349421CC96E7F00E299CF /* LYPageViewController.h */,
+				670349431CC96E7F00E299CF /* LYPageViewController.m */,
+				670349441CC96E7F00E299CF /* LYSection.h */,
+				670349451CC96E7F00E299CF /* UIKit+LYAdditions.h */,
+				670349461CC96E7F00E299CF /* UIKit+LYAdditions.m */,
+				6703495E1CC9875C00E299CF /* LYListHeaderSection.h */,
+				6703495F1CC9875C00E299CF /* LYListHeaderSection.m */,
+				670349601CC9875C00E299CF /* LYListSection.h */,
+				670349611CC9875C00E299CF /* LYListSection.m */,
+			);
+			name = LYPageLayout;
+			path = Libraries/LYPageLayout;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -131,8 +191,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				670349271CC84E7800E299CF /* ViewController.swift in Sources */,
+				670349481CC96E7F00E299CF /* LYCollectionViewCustomBehavior.m in Sources */,
+				670349631CC9875C00E299CF /* LYListSection.m in Sources */,
+				670349271CC84E7800E299CF /* DeviceMotionPage.swift in Sources */,
 				670349251CC84E7800E299CF /* AppDelegate.swift in Sources */,
+				6703494B1CC96E7F00E299CF /* UIKit+LYAdditions.m in Sources */,
+				670349491CC96E7F00E299CF /* LYCollectionViewLayout.m in Sources */,
+				6703494A1CC96E7F00E299CF /* LYPageViewController.m in Sources */,
+				670349471CC96E7F00E299CF /* LYCollectionViewBehavior.m in Sources */,
+				670349621CC9875C00E299CF /* LYListHeaderSection.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -243,6 +310,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.meridianapps.SensorFusion;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "$(SRCROOT)/SensorFusion/SensorFusion-Bridging-Header.h";
 			};
 			name = Debug;
 		};
@@ -254,6 +322,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.meridianapps.SensorFusion;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "$(SRCROOT)/SensorFusion/SensorFusion-Bridging-Header.h";
 			};
 			name = Release;
 		};
