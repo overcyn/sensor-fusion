@@ -3,7 +3,7 @@
 
 #define SCROLL_INDICATOR_INSETS_KEY         @"LYScrollIndicatorInsets"
 
-BOOL NSEqualObjects(id a, id b) {
+BOOL LYEqualObjects(id a, id b) {
     return (a == b) || [a isEqual:b];
 }
 

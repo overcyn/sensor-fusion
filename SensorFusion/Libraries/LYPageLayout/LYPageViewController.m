@@ -178,17 +178,17 @@
         self.title = self.page.title;
     }
     if ([self.page respondsToSelector:@selector(rightBarButtonItems)]) {
-        if (!NSEqualObjects(self.navigationItem.rightBarButtonItems, self.page.rightBarButtonItems)) {
+        if (!LYEqualObjects(self.navigationItem.rightBarButtonItems, self.page.rightBarButtonItems)) {
             self.navigationItem.rightBarButtonItems = self.page.rightBarButtonItems;
         }
     }
     if ([self.page respondsToSelector:@selector(leftBarButtonItems)]) {
-        if (!NSEqualObjects(self.navigationItem.leftBarButtonItems, self.page.leftBarButtonItems)) {
+        if (!LYEqualObjects(self.navigationItem.leftBarButtonItems, self.page.leftBarButtonItems)) {
             self.navigationItem.leftBarButtonItems = self.page.leftBarButtonItems;
         }
     }
     if ([self.page respondsToSelector:@selector(titleView)]) {
-        if (!NSEqualObjects(self.navigationItem.titleView, self.page.titleView)) {
+        if (!LYEqualObjects(self.navigationItem.titleView, self.page.titleView)) {
             self.navigationItem.titleView = self.page.titleView;
         }
     }

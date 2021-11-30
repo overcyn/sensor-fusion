@@ -1,6 +1,6 @@
 #import <UIKit/UIKit.h>
 
-BOOL NSEqualObjects(id a, id b);
+BOOL LYEqualObjects(id a, id b);
 
 @interface UIScrollView (LYAdditions)
 @property (nonatomic) UIEdgeInsets LYScrollIndicatorInsets;

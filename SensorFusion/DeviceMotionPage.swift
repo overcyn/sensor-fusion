@@ -1,6 +1,48 @@
 import UIKit
 import CoreMotion
 
+class RootPage: NSObject, LYPage {
+    override init() {
+        sections = []
+        super.init()
+        reloadSections()
+    }
+    
+    func reloadSections() {
+        var sections:[AnyObject] = []
+        do {
+            let section = LYListSection()
+            section.title = "Device Motion"
+            section.action = { [weak self] in
+                guard let `self` = self else { return }
+                let pageVC = LYPageViewController()
+                pageVC.page = DeviceMotionPage()
+                self.delegate?.parentViewControllerForPage(self).navigationController?.pushViewController(pageVC, animated:true)
+            }
+            sections.append(section)
+        }
+        do {
+            let section = LYListSection()
+            section.title = "Device Motion"
+            section.action = { [weak self] in
+                guard let `self` = self else { return }
+                let pageVC = LYPageViewController()
+                pageVC.page = DeviceMotionPage()
+                self.delegate?.parentViewControllerForPage(self).navigationController?.pushViewController(pageVC, animated:true)
+            }
+            sections.append(section)
+        }
+        self.sections = sections
+        self.delegate?.pageDidUpdate(self)
+    }
+    
+    // MARK: LYPage
+    
+    var delegate: LYPageDelegate?
+    var sections: [AnyObject]
+    let title = "Sensor Fusion"
+}
+
 class DeviceMotionPage: NSObject, LYPage {
     override init() {
         sections = []
@@ -19,7 +61,9 @@ class DeviceMotionPage: NSObject, LYPage {
     let queue: NSOperationQueue
     let motionManager: CMMotionManager
     var deviceMotion: CMDeviceMotion?
-    var delegate: LYPageDelegate?
+    var x: Double = 0
+    var y: Double = 0
+    var z: Double = 0
     
     func reloadSections() {
        guard let deviceMotion = self.deviceMotion else {
@@ -95,19 +139,23 @@ class DeviceMotionPage: NSObject, LYPage {
             header.title = "User Acceleration"
             sections.append(header)
             
+            x = x * 0.8 + deviceMotion.userAcceleration.x * 0.2
+            y = y * 0.8 + deviceMotion.userAcceleration.y * 0.2
+            z = z * 0.8 + deviceMotion.userAcceleration.z * 0.2
+            
             let roll = LYListSection()
             roll.title = "x"
-            roll.detailTitle = String(format: "%.2f", deviceMotion.userAcceleration.x)
+            roll.detailTitle = String(format: "%.2f", x)
             sections.append(roll)
             
             let pitch = LYListSection()
             pitch.title = "y"
-            pitch.detailTitle = String(format: "%.2f", deviceMotion.userAcceleration.y)
+            pitch.detailTitle = String(format: "%.2f", y)
             sections.append(pitch)
             
             let yaw = LYListSection()
             yaw.title = "z"
-            yaw.detailTitle = String(format: "%.2f", deviceMotion.userAcceleration.z)
+            yaw.detailTitle = String(format: "%.2f", z)
             sections.append(yaw)
         }
         do {
@@ -136,6 +184,7 @@ class DeviceMotionPage: NSObject, LYPage {
     
     // MARK: LYPage
     
+    var delegate: LYPageDelegate?
     var sections: [AnyObject]
     let title = "Device Motion"
 }
